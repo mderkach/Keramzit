@@ -38,20 +38,35 @@ h1, h2, button
     font-family: "ApercuPro-Bold"
     font-size: 60px
     font-weight: 700
-
+button.fancybox-close-small
+    font-size: inherit!important
 button
     border-radius: 0!important
     
 .btn-green
     background-color: $green-bg
     color: #fff
+    &:hover
+        background-color: $green-bg-hover
+    
 .btn-white
     background-color: #fff
     color: #000
+    &:hover
+        color: $green-bg
     
-header
+.box-shadow
+    box-shadow: 10px 10px 0px 0px $shadow-gray
+
+.screen
+    padding: 80px 0    
+    
+.screen-bg
+     background-color: #fafafb
+
+header, footer
     line-height: 1
-    padding: 20px 0
+    padding: 10px 0
     .logo-wrapper
         p
             color: $text
@@ -78,22 +93,23 @@ header
             font-size: 18px
             font-weight: 300
             margin-bottom: 13px
-        .tel
+        a.tel
             font-family: "ApercuPro-Medium"
             font-size: 24px
             font-weight: 500
             margin-bottom: 10px
+            display: block
+            color: #000
         .work-time
             color: $green-bg
             font-family: "ApercuPro-Medium"
             font-size: 18px
             font-weight: 500
             margin-bottom: 0
-.screen
-    padding: 80px 0
     
 .main-screen
-    background: url('/img/bg-1.jpg') no-repeat
+    background: url('../img/bg-1.jpg') no-repeat
+    background-size: cover
     h1
         color: #fff
         margin-bottom: 30px
@@ -174,13 +190,11 @@ header
                 letter-spacing: 0.7px
                 height: 62px
 .third-screen
-    background-color: #fafafb
     img
         width: 210px
         height: 300px
         margin-bottom: 45px
-    .box-shadow
-        box-shadow: 10px 10px 0px 0px $shadow-gray
+
     h3
         color: #373737
         font-family: "ApercuPro-Bold"
@@ -192,8 +206,10 @@ header
         font-size: 18px
         font-weight: 300
         line-height: 28px
+
 .fourth-screen
-    background: url('/img/bg-2.png') no-repeat
+    background: url('../img/bg-2.jpg') no-repeat
+    background-size: cover
     p
         color: #fff
         font-size: 32px
@@ -212,7 +228,218 @@ header
         height: 72px
     .btn-bottom
         margin-bottom: 30px
-    
         
-        
+.fifth-screen
+   .btn
+        left: 12%
+        top: 47%
+        font-family: "ApercuPro-Bold"
+        font-size: 12px
+        font-weight: 700
+        line-height: 24px
+        text-transform: uppercase
+        width: 165px
+        height: 47px
+
+.garanties-wrapper
+    .garanties-item
+        margin-top: 70px
+        .garanties-icon-wrapper
+            .counter
+                top: -10px
+                left: -10px
+                width: 30px
+                height: 30px
+                color: #000
+                background-color: #ffcb05
+                p
+                    font-family: "ApercuPro-Medium"
+                    font-size: 14px
+                    font-weight: 500
+                    line-height: 30px
+                    letter-spacing: -0.35px
+                    margin-bottom: 0
+                    vertical-align: middle
+                    text-align: center
+.sixth-screen
+    .slider-wrapper
+        .slider-item
+            color: #373737
+            img 
+                width: 100%
+                max-width: 200px
+                height: 100%
+                max-height: 200px
+                margin: 0 auto
+            .item-name
+                font-family: "ApercuPro-Medium"
+                font-size: 24px
+                font-weight: 500
+                line-height: 32px
+                margin-top: 22px
+                margin-bottom: 15px
+            .item-desc
+                font-size: 16px
+                font-weight: 300
+                line-height: 22px
+                margin-bottom: 20px
+            .item-price-wrapper
+                padding: 5px 8px
+                background: #ffcb05
+                max-width: 125px
+                margin: 0 auto
+                .item-price
+                    font-family: "ApercuPro-Medium"
+                    font-size: 18px
+                    font-weight: 500
+                    line-height: 30px
+                    margin-bottom: 0
+    .slick-next, .slick-prev
+        &:before
+            color: #000
+        &:hover
+            &:before
+                color: $green-bg-hover
+.seventh-screen
+    background: url('../img/bg-3.jpg') no-repeat
+    background-size: cover
+    h2
+        color: #fff
+        margin-bottom: 60px
+    h3
+        color: #fff
+        font-family: "ApercuPro-bold"
+        font-size: 32px
+        font-weight: 700
+        line-height: 42px
+        margin-bottom: 20px
+    .pseudo-li
+        p
+            margin-bottom: 30px
+            color: #fff
+            font-size: 24px
+            line-height: 32px
+            strong
+                font-family: "ApercuPro-Bold"
+                font-weight: 700
+        img
+            top: 15px
+            position: relative
+            margin-right: 15px
+    .judicial-card.w175
+        width: 175px
+    .judicial-card
+        padding: 15px!important
+        background: #fff
+        color: #000
+        p
+            color: #0a0304
+            font-size: 18px
+            font-weight: 300
+            line-height: 30px
+            margin-top: 20px
+            margin-bottom: 0
+            strong
+                font-family: "ApercuPro-Bold"
+                font-size: 24px
+                font-weight: 700
+                line-height: 28px
+.eights-screen
+    padding: 0
+    .map-wrapper
+        width: 100%
+        height: 620px
+    .map-info
+        z-index: 1
+        background: #fff
+        right: 0
+        padding-top: 30px
+        padding-left: 50px
+        padding-right: 15px
+        padding-bottom: 15px
+        h2
+            font-size: 32px
+            line-height: 40px
+            margin-bottom: 30px
+        .map-contacts
+            p
+                color: #040302
+                font-family: "ApercuPro-Light"
+                font-size: 20px
+                font-weight: 300
+                line-height: 30px
+                margin-bottom: 25px
+            .map-tel, .map-mail
+                margin-left: 57px
+            .mailing
+                img
+                    margin-right: 25px
+            .buttons-wrapper
+                button
+                    height: 62px
+                .black-border
+                    border: 2px solid #373737
+                    &:hover
+                        border: 2px solid $green-bg
+                        color: #000
+                p
+                    color: #000000
+                    font-family: "ApercuPro-light"
+                    font-size: 14px
+                    font-weight: 300
+                    line-height: 30px
+.nineth-screen
+    padding-bottom: 60px
+    form
+        input, textarea
+            border-radius: 0
+        input
+            height: 72px
+            margin-bottom: 20px
+        input[type=submit]
+            font-family: "ApercuPro-Bold"
+            font-size: 16px
+            font-weight: 700
+            line-height: 30px
+            letter-spacing: 0.8px
+            margin-bottom: 0
+footer
+    .jur-info
+        p
+            font-size: 15px
+            font-weight: 300
+            line-height: 26px
+            margin-bottom: 0
+    .links
+        a
+            margin-left: 30px
+            color: #000
+            text-decoration: none
+            display: block
+            font-family: "ApercuPro-Light"
+            font-size: 15px
+            font-weight: 300
+            line-height: 26px
+            &:hover
+                font-family: "ApercuPro-Bold"
+                font-weight: 700
+.popup
+    display: none
+    width: 100%
+    max-width: 440px
+    h2
+        font-size: 21px
+        color: #000
+        text-transform: uppercase
+    p
+        font-size: 18px
+        color: #000
+    .form
+        padding: 0
+        input
+            height: 72px
+            border: 1px solid $shadow-gray
+            
+.compensate-for-scrollbar
+    margin-right: 17px!important
 @import "media" // Always at the end

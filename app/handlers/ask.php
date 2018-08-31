@@ -2,8 +2,8 @@
 header('Content-Type: text/html; charset=UTF-8');
 $error = false;
 $name = '';
-$phone = '';
-$position = '';
+$email = '';
+$ask = '';
 
 
 //Город и область посетителя
@@ -28,26 +28,27 @@ if(!empty($_POST['name'])) {
 } else {
     $error = true;
 }
-if(!empty($_POST['phone'])) {
-    $phone = htmlspecialchars(trim($_POST['phone']), ENT_QUOTES);
-    if(empty($phone)){
+if(!empty($_POST['email'])) {
+    $email = htmlspecialchars(trim($_POST['email']), ENT_QUOTES);
+    if(empty($email)){
         $error = true;
     }
 } else {
     $error = true;
 }
-if(!empty($_POST['position'])) {
-    $position = htmlspecialchars(trim($_POST['position']), ENT_QUOTES);
-    if(empty($position)){
+if(!empty($_POST['ask'])) {
+    $ask = htmlspecialchars(trim($_POST['ask']), ENT_QUOTES);
+    if(empty($ask)){
         $error = true;
     }
 } else {
     $error = true;
 }
+
 //preparing mail
 if(!$error) {
     $from = '';
-    $subject = '[Имя сайта] Заявка: '.$position;
+    $subject = '[Имя сайта] Заявка: ';
 
     $headers = "MIME-Version: 1.0\n";
     $headers .= "Content-type: text/html; charset=utf-8\n";
@@ -59,11 +60,11 @@ if(!$error) {
     $content = "<html><body><table border='1' style='border-color: #666; border-collapse: collapse;' cellpadding='5'>" .
         "<tr style='background: #eee;'><td><strong>Время заявки:</strong> </td><td>".$timestamp."</td></tr>" .
         "<tr><td><strong>Имя посетителя:</strong> </td><td>".$name."</td></tr>\n\n" .
-        "<tr><td><strong>Телефон посетителя:</strong> </td><td>".$phone."</td></tr>\n\n" .
+        "<tr><td><strong>Телефон посетителя:</strong> </td><td>".$email."</td></tr>\n\n" .
         "<tr><td><strong>IP посетителя:</strong> </td><td>".$ip."</td></tr>\n\n" .
         "<tr><td><strong>Область посетителя:</strong> </td><td>".$place[1]."</td></tr>\n\n" .
         "<tr><td><strong>Город посетителя:</strong> </td><td>".$place[0]."</td></tr>\n\n" .
-        "<tr><td><strong>Форма:</strong> </td><td>".$position."</td></tr>\n\n" .
+        "<tr><td><strong>Форма:</strong> </td><td>".$ask."</td></tr>\n\n" .
         "</table></body></html>\n\n";
 
 
@@ -100,7 +101,10 @@ if(!$error) {
 } elseif($error2) {
         echo '<h1>Вы должны принять согласие на обработку персональных данных</h1>';
     } else {
-        echo '<h1>Неизвестная ошибка, обратитесь к администратору!</h1>';
+        echo '<h1>Неизвестная ошибка, обратитесь к администратору!</h1>'.
+            "Ask:" . $ask .
+            "email:" . $email . 
+            "phone:" . $phone;
     }
 ?>
 

@@ -8,12 +8,144 @@
 
 // ≥992px
 +media-breakpoint-down(md)
+    button, h1, h2
+        font-size: 45px
+    header,footer 
+        .contacts-wrapper 
+            p
+                font-size: 16px
+    .main-screen 
+        p
+            font-size: 20px
+    .product-name-wrapper
+        text-align: center
+    .fifth-screen 
+        .btn
+            left: auto
+    .judicial-card
+        width: 48%!important
+        margin: 0 auto
+    .eights-screen 
+        .map-info
+            h2
+                br
+                    display: none
+            .map-contacts 
+                .buttons-wrapper 
+                    button
+                        font-size: 14px
+            padding-left: 15px!important
+            padding-right: 15px!important
+    footer
+        .jur-info
+            text-align: center
+            margin-bottom: 10px
+        .links
+            margin-bottom: 10px
+            a
+                margin-left: 0
+        .contacts-wrapper
+            text-align: center!important
     
 // ≥768px
 +media-breakpoint-down(sm)
-
+    br
+        display: none
+    footer,header
+        br
+            display: block
+        .your-city 
+            .place-wrapper
+                br
+                    display: none
+        /*.logo-wrapper
+            p
+                br
+                    display: none*/
+    button, h1, h2 
+        font-size: 35px
+        
+    header,footer
+        .your-city
+            p
+                text-align: center
+                margin-bottom: 10px
+        .contacts-wrapper
+            text-align: center!important
+    .eights-screen
+        height: 100%
+        max-height: 585px
+        .map-wrapper
+            max-height: 585px
+        .map-info 
+            h2
+                font-size: 28px
+    .small-p
+        margin-bottom: 10px
+   
 +media-breakpoint-down(xs)
+    footer, header 
+        .logo-wrapper
+            p
+                font-size: 17px
+    button, h1, h2
+        font-size: 25px
+    .main-screen 
+        p
+            font-size: 16px
+        .bullet 
+            p
+                font-size: 18px
+        .buttons-wrapper 
+            button
+                font-size: 12px
+    .second-screen 
+        .products-tabs 
+            .nav-item
+                margin-right: 0
+        .product-item
+            padding: 0
+            .product-spec 
+                p
+                    margin: 10px 0
+                    br
+                        display: block
+        .product-img-wrapper
+            img
+                display: block
+                margin: 0 auto
+    .fourth-screen
+        button
+            font-size: 14px
+        p
+            font-size: 20px
+    .garanties-icon-wrapper
+        width: 50px
+        margin: 0 auto
+    .judicial-card
+        width: 100%!important
+        margin-bottom: 10px
+    .eights-screen 
+        .map-info
+            padding-left: 15px!important
+            padding-right: 15px!important
+            h2
+                font-size: 20px
+            .map-contacts 
+                p
+                    font-size: 16px
+                .buttons-wrapper
+                    button
+                        font-size: 14px
+    .nineth-screen 
+        form 
+            input[type=submit]
+                font-size: 14px
 
+@media (max-width: 360px)
+    button, input[type=submit]
+        font-size: 11px!important
+    
 /*==========  Mobile First  ==========*/
 
 // ≤576px

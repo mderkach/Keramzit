@@ -22,16 +22,16 @@
     <!-- Custom HTML -->
     <header>
         <div class="container">
-            <div class="row d-flex align-items-end">
-                <div class="col-3 logo-wrapper d-flex justify-content-start align-items-center">
+            <div class="row flex-column flex-md-row d-flex align-items-md-end align-items-center">
+                <div class="col-md-3 col-12 logo-wrapper d-flex justify-content-md-start justify-content-center align-items-center">
                     <img src="img/logo.png" alt="" class="logo">
                     <p class="logo-descr">
                         Рязанская<br> керамзитовая
                         <br> компания
                     </p>
                 </div>
-                <div class="offset-2 col-2 your-city">
-                    <div class="place-wrapper d-flex justify-content-start align-items-center">
+                <div class="offset-md-2 col-12 col-md-2 your-city">
+                    <div class="place-wrapper d-flex justify-content-md-start justify-content-center align-items-center">
                         <img src="img/icon-double-placemark.png" alt="">
                         <p>
                             Ваш<br> город:
@@ -39,9 +39,9 @@
                     </div>
                     <p><strong>Москва</strong></p>
                 </div>
-                <div class="col-4 text-right contacts-wrapper">
+                <div class="col-md-4 col-12 text-right contacts-wrapper">
                     <p>Бесплатный звонок по России</p>
-                    <p class="tel">7 (495) 431-83-31</p>
+                    <a href="tel:+74991166296" class="tel">7 (495) 431-83-31</a>
                     <p class="work-time">с 10:00 до 19:00</p>
                 </div>
             </div>
@@ -55,33 +55,33 @@
                 </h1>
                 <p class="text-center">Легкий, не дробленный, экологически чистый и без примесей </p>
             </div>
-            <div class="row bullets-wrapper">
-                <div class="col-4 bullet text-center">
+            <div class="row bullets-wrapper flex-column flex-lg-row align-items-center">
+                <div class="col-lg-4 col-sm-8 col-12 bullet text-center">
                     <img src="img/icon-car-yellow.png" alt="">
                     <p>
                         Доставка по Москве<br> и МО в день обращения
                     </p>
                 </div>
-                <div class="col-4 bullet text-center">
+                <div class="col-lg-4 col-sm-8 col-12 bullet text-center">
                     <img src="img/icon-shield.png" alt="">
                     <p>
                         2 гарантии<br> в договоре
                     </p>
                 </div>
-                <div class="col-4 bullet text-center">
+                <div class="col-lg-4 col-sm-8 col-12 bullet text-center">
                     <img src="img/icon-certificate.png" alt="">
                     <p>
                         Сертификаты на продукцию<br> и отчетные документы<br> везем к вам с керамзитом
                     </p>
                 </div>
             </div>
-            <div class="row buttons-wrapper text-center">
-                <div class="col-6">
-                    <button class="btn btn-block btn-green">БЕСПЛАТНО ПОЛУЧИТЬ ОБРАЗЦЫ КЕРАМЗИТА</button>
+            <div class="row flex-column flex-lg-row buttons-wrapper text-center">
+                <div class="col-lg-6 col-12">
+                    <button data-fancybox data-popup data-src="#popup" data-position="Главный экран" data-header="БЕСПЛАТНО ПОЛУЧИТЬ ОБРАЗЦЫ КЕРАМЗИТА" class="btn btn-block btn-green">БЕСПЛАТНО ПОЛУЧИТЬ ОБРАЗЦЫ КЕРАМЗИТА</button>
                     <p>Доставка по Москве и МО в день обращения</p>
                 </div>
-                <div class="col-6">
-                    <button class="btn btn-block btn-white">РАСЧЕТ СТОИМОСТИ И СРОКОВ ПОСТАВКИ</button>
+                <div class="col-lg-6 col-12">
+                    <button data-fancybox data-popup data-src="#popup" data-position="Главный экран" data-header="РАСЧЕТ СТОИМОСТИ И СРОКОВ ПОСТАВКИ" class="btn btn-block btn-white">РАСЧЕТ СТОИМОСТИ И СРОКОВ ПОСТАВКИ</button>
                     <p>Пришлем расчет в течение 3-х минут</p>
                 </div>
             </div>
@@ -92,7 +92,7 @@
             <div class="row">
                 <div class="col-12">
                     <h2 class="text-center">Цена на керамзит</h2>
-                    <ul class="nav text-center justify-content-center products-tabs" id="productsTab" role="tablist">
+                    <ul class="nav text-center flex-column flex-sm-row justify-content-center products-tabs" id="productsTab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" id="home-tab" data-toggle="tab" href="#spilled" role="tab" aria-controls="spilled" aria-selected="true">РОССЫПЬЮ</a>
                         </li>
@@ -111,20 +111,20 @@
                 <div class="product-item-wrapper d-flex justify-content-center">
                     <div class="product-item">
                         <div class="container">
-                            <div class="row d-flex align-items-center">
-                                <div class="col-2 product-img-wrapper">
+                            <div class="row  d-flex flex-column flex-sm-row align-items-center">
+                                <div class="col-lg-2 col-sm-6 col-12 product-img-wrapper">
                                     <img src="img/keramzit.jpg" alt="">
                                 </div>
-                                <div class="col-3 product-name-wrapper">
+                                <div class="col-lg-3 col-sm-6 col-12 product-name-wrapper">
                                     <p class="product-name">Франкция 2-5</p>
                                     <p>М 350-400 / П 50</p>
                                 </div>
-                                <div class="col-4 product-spec">
+                                <div class="col-lg-4 col-sm-6 col-12 d-flex d-sm-block justify-content-center product-spec">
                                     <p>
                                         Прочность, Мпа - <strong>1,5-2,0</strong><br> Коэффициент теплопроводности,<br> Вт/мК - <strong>0,0838</strong><br> Морозостойкость, циклов - <strong>F15</strong>
                                     </p>
                                 </div>
-                                <div class="col-3 product-price">
+                                <div class="col-lg-3 col-sm-6 col-12 product-price">
                                     <p class="text-center">
                                         от 2 500 руб/м<sup>3</sup>
                                     </p>
@@ -137,20 +137,20 @@
                 <div class="product-item-wrapper d-flex justify-content-center">
                     <div class="product-item">
                         <div class="container">
-                            <div class="row d-flex align-items-center">
-                                <div class="col-2 product-img-wrapper">
+                            <div class="row  d-flex flex-column flex-sm-row align-items-center">
+                                <div class="col-lg-2 col-sm-6 col-12 product-img-wrapper">
                                     <img src="img/keramzit.jpg" alt="">
                                 </div>
-                                <div class="col-3 product-name-wrapper">
+                                <div class="col-lg-3 col-sm-6 col-12 product-name-wrapper">
                                     <p class="product-name">Франкция 2-5</p>
                                     <p>М 350-400 / П 50</p>
                                 </div>
-                                <div class="col-4 product-spec">
+                                <div class="col-lg-4 col-sm-6 col-12 d-flex d-sm-block justify-content-center product-spec">
                                     <p>
                                         Прочность, Мпа - <strong>1,5-2,0</strong><br> Коэффициент теплопроводности,<br> Вт/мК - <strong>0,0838</strong><br> Морозостойкость, циклов - <strong>F15</strong>
                                     </p>
                                 </div>
-                                <div class="col-3 product-price">
+                                <div class="col-lg-3 col-sm-6 col-12 product-price">
                                     <p class="text-center">
                                         от 2 500 руб/м<sup>3</sup>
                                     </p>
@@ -163,20 +163,20 @@
                 <div class="product-item-wrapper d-flex justify-content-center">
                     <div class="product-item">
                         <div class="container">
-                            <div class="row d-flex align-items-center">
-                                <div class="col-2 product-img-wrapper">
+                            <div class="row  d-flex flex-column flex-sm-row align-items-center">
+                                <div class="col-lg-2 col-sm-6 col-12 product-img-wrapper">
                                     <img src="img/keramzit.jpg" alt="">
                                 </div>
-                                <div class="col-3 product-name-wrapper">
+                                <div class="col-lg-3 col-sm-6 col-12 product-name-wrapper">
                                     <p class="product-name">Франкция 2-5</p>
                                     <p>М 350-400 / П 50</p>
                                 </div>
-                                <div class="col-4 product-spec">
+                                <div class="col-lg-4 col-sm-6 col-12 d-flex d-sm-block justify-content-center product-spec">
                                     <p>
                                         Прочность, Мпа - <strong>1,5-2,0</strong><br> Коэффициент теплопроводности,<br> Вт/мК - <strong>0,0838</strong><br> Морозостойкость, циклов - <strong>F15</strong>
                                     </p>
                                 </div>
-                                <div class="col-3 product-price">
+                                <div class="col-lg-3 col-sm-6 col-12 product-price">
                                     <p class="text-center">
                                         от 2 500 руб/м<sup>3</sup>
                                     </p>
@@ -189,20 +189,20 @@
                 <div class="product-item-wrapper d-flex justify-content-center">
                     <div class="product-item">
                         <div class="container">
-                            <div class="row d-flex align-items-center">
-                                <div class="col-2 product-img-wrapper">
+                            <div class="row  d-flex flex-column flex-sm-row align-items-center">
+                                <div class="col-lg-2 col-sm-6 col-12 product-img-wrapper">
                                     <img src="img/keramzit.jpg" alt="">
                                 </div>
-                                <div class="col-3 product-name-wrapper">
+                                <div class="col-lg-3 col-sm-6 col-12 product-name-wrapper">
                                     <p class="product-name">Франкция 2-5</p>
                                     <p>М 350-400 / П 50</p>
                                 </div>
-                                <div class="col-4 product-spec">
+                                <div class="col-lg-4 col-sm-6 col-12 d-flex d-sm-block justify-content-center product-spec">
                                     <p>
                                         Прочность, Мпа - <strong>1,5-2,0</strong><br> Коэффициент теплопроводности,<br> Вт/мК - <strong>0,0838</strong><br> Морозостойкость, циклов - <strong>F15</strong>
                                     </p>
                                 </div>
-                                <div class="col-3 product-price">
+                                <div class="col-lg-3 col-sm-6 col-12 product-price">
                                     <p class="text-center">
                                         от 2 500 руб/м<sup>3</sup>
                                     </p>
@@ -230,20 +230,20 @@
         </div>
 
     </section>
-    <section class="screen third-screen">
+    <section class="screen third-screen screen-bg">
         <div class="container">
             <div class="row">
                 <div class="col-12">
                     <h2 class="text-center">Соблюдены все технические<br> и строительные регламенты</h2>
                 </div>
-                <div class="col-6 text-center">
+                <div class="col-lg-6 col-12 text-center">
                     <img class="box-shadow" src="img/certificate-1.jpg" alt="">
                     <h3>Сертификат соответствия</h3>
                     <p>
                         Соответствует требованиям нормативных<br> документов ГОСТ 32496-2013 "Заполнители<br> пористые для легких бетонов"
                     </p>
                 </div>
-                <div class="col-6 text-center">
+                <div class="col-lg-6 col-12 text-center">
                     <img class="box-shadow" src="img/certificate-1.jpg" alt="">
                     <h3>
                         Протокол испытаний<br> #169-45-09/15
@@ -258,20 +258,20 @@
     <section class="screen fourth-screen">
         <div class="container">
             <div class="row">
-                <div class="col-6 d-flex flex-column justify-content-between">
+                <div class="col-lg-6 col-12 d-flex flex-column justify-content-between">
                     <p>
                         <strong>Бесплатно получите образцы<br>
                             керамзита</strong> - самостоятельно<br> убедитесь в качестве
                     </p>
-                    <button class="btn btn-block btn-green">БЕСПЛАТНО ПОЛУЧИТЬ ОБРАЗЦЫ КЕРАМЗИТА</button>
+                    <button data-fancybox data-popup data-src="#popup" data-position="Четвертый  экран" data-header="БЕСПЛАТНО ПОЛУЧИТЬ ОБРАЗЦЫ КЕРАМЗИТА" class="btn btn-block btn-green">БЕСПЛАТНО ПОЛУЧИТЬ ОБРАЗЦЫ КЕРАМЗИТА</button>
                     <p class="small-p text-center">Привезем образцы в удобное для вас время</p>
                 </div>
-                <div class="col-6 d-flex flex-column justify-content-between">
+                <div class="col-lg-6 col-12 d-flex flex-column justify-content-between">
                     <p>
                         В течение 3-х минут получите<br>
                         <strong>расчет стоимости и сроков</strong>
                     </p>
-                    <button class="btn btn-block btn-white btn-bottom">РАСЧЕТ СТОИМОСТИ И СРОКОВ ПОСТАВКИ</button>
+                    <button data-fancybox data-popup data-src="#popup" data-position="Четвертый  экран" data-header="РАСЧЕТ СТОИМОСТИ И СРОКОВ ПОСТАВКИ" class="btn btn-block btn-white btn-bottom">РАСЧЕТ СТОИМОСТИ И СРОКОВ ПОСТАВКИ</button>
                 </div>
             </div>
         </div>
@@ -284,27 +284,41 @@
                         2 гарантии, прописанные<br> в договоре:
                     </h2>
                 </div>
-                <div class="offset-2 col-3">
-                    <button class="btn">смотреть договор</button>
+                <div class="offset-lg-2 col-lg-3 col-12 position-relative d-lg-block d-flex justify-content-center order-3 order-lg-1">
+                    <img class="box-shadow" src="img/certificate-1.jpg" alt="">
+                    <button class="btn position-absolute btn-green">смотреть договор</button>
                 </div>
-                <div class="col-3">
-                    <img src="img/icon-libra.png" alt="">
-                    <p>
-                        <strong>Разница в весе<br>
-                            за наш счет,<br> </strong> если будет<br> недогруз
-                    </p>
+                <div class="col-lg-3 col-sm-6 col-12 d-flex flex-column justify-content-start align-items-center garanties-wrapper order-1">
+                    <div class="garanties-item">
+                        <div class="garanties-icon-wrapper position-relative">
+                            <img src="img/icon-libra.png" alt="">
+                            <div class="counter position-absolute">
+                                <p>01</p>
+                            </div>
+                        </div>
+                        <p>
+                            <strong>Разница в весе<br>
+                                за наш счет,<br> </strong> если будет<br> недогруз
+                        </p>
+                    </div>
                 </div>
-                <div class="col-3">
-                    <img src="img/icon-coins.png" alt="">
-                    <p>
-                        <span>Возврат денег,<br> </span> если опоздали<br> на 1 минуту
-                    </p>
+                <div class="col-lg-3 col-sm-6 col-12 d-flex flex-column justify-content-start align-items-center garanties-wrapper order-2">
+                    <div class="garanties-item">
+                        <div class="garanties-icon-wrapper position-relative">
+                            <img src="img/icon-coins.png" alt="">
+                            <div class="counter position-absolute">
+                                <p>02</p>
+                            </div>
+                        </div>
+                        <p>
+                            <span>Возврат денег,<br> </span> если опоздали<br> на 1 минуту
+                        </p>
+                    </div>
                 </div>
-
             </div>
         </div>
     </section>
-    <section class="screen sixth-screen">
+    <section class="screen sixth-screen screen-bg">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -312,45 +326,85 @@
                 </div>
             </div>
             <div class="row slider-wrapper">
-                <div class="col-3 slider-item text-center">
+                <div class="col-lg-3 col-md-6 col-12 slider-item text-center">
                     <img src="img/block.jpg" alt="">
-                    <p>Где его взять?</p>
-                    <p>
+                    <p class="item-name">Где его взять?</p>
+                    <p class="item-desc">
                         Взятый с потолка псевдо-<br> латинский набор слов,<br> но это не совсем так
                     </p>
-                    <p>100 500 руб.</p>
+                    <div class="item-price-wrapper">
+                        <p class="item-price">100 500 руб.</p>
+                    </div>
                 </div>
-                <div class="col-3 slider-item text-center">
+                <div class="col-lg-3 col-md-6 col-12 slider-item text-center">
                     <img src="img/block.jpg" alt="">
-                    <p>Где его взять?</p>
-                    <p>
+                    <p class="item-name">Где его взять?</p>
+                    <p class="item-desc">
                         Взятый с потолка псевдо-<br> латинский набор слов,<br> но это не совсем так
                     </p>
-                    <p>100 500 руб.</p>
+                    <div class="item-price-wrapper">
+                        <p class="item-price">100 500 руб.</p>
+                    </div>
                 </div>
-                <div class="col-3 slider-item text-center">
+                <div class="col-lg-3 col-md-6 col-12 slider-item text-center">
                     <img src="img/block.jpg" alt="">
-                    <p>Где его взять?</p>
-                    <p>
+                    <p class="item-name">Где его взять?</p>
+                    <p class="item-desc">
                         Взятый с потолка псевдо-<br> латинский набор слов,<br> но это не совсем так
                     </p>
-                    <p>100 500 руб.</p>
+                    <div class="item-price-wrapper">
+                        <p class="item-price">100 500 руб.</p>
+                    </div>
                 </div>
-                <div class="col-3 slider-item text-center">
+                <div class="col-lg-3 col-md-6 col-12 slider-item text-center">
                     <img src="img/block.jpg" alt="">
-                    <p>Где его взять?</p>
-                    <p>
+                    <p class="item-name">Где его взять?</p>
+                    <p class="item-desc">
                         Взятый с потолка псевдо-<br> латинский набор слов,<br> но это не совсем так
                     </p>
-                    <p>100 500 руб.</p>
+                    <div class="item-price-wrapper">
+                        <p class="item-price">100 500 руб.</p>
+                    </div>
                 </div>
-                <div class="col-3 slider-item text-center">
+                <div class="col-lg-3 col-md-6 col-12 slider-item text-center">
                     <img src="img/block.jpg" alt="">
-                    <p>Где его взять?</p>
-                    <p>
+                    <p class="item-name">Где его взять?</p>
+                    <p class="item-desc">
                         Взятый с потолка псевдо-<br> латинский набор слов,<br> но это не совсем так
                     </p>
-                    <p>100 500 руб.</p>
+                    <div class="item-price-wrapper">
+                        <p class="item-price">100 500 руб.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 slider-item text-center">
+                    <img src="img/block.jpg" alt="">
+                    <p class="item-name">Где его взять?</p>
+                    <p class="item-desc">
+                        Взятый с потолка псевдо-<br> латинский набор слов,<br> но это не совсем так
+                    </p>
+                    <div class="item-price-wrapper">
+                        <p class="item-price">100 500 руб.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 slider-item text-center">
+                    <img src="img/block.jpg" alt="">
+                    <p class="item-name">Где его взять?</p>
+                    <p class="item-desc">
+                        Взятый с потолка псевдо-<br> латинский набор слов,<br> но это не совсем так
+                    </p>
+                    <div class="item-price-wrapper">
+                        <p class="item-price">100 500 руб.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 col-12 slider-item text-center">
+                    <img src="img/block.jpg" alt="">
+                    <p class="item-name">Где его взять?</p>
+                    <p class="item-desc">
+                        Взятый с потолка псевдо-<br> латинский набор слов,<br> но это не совсем так
+                    </p>
+                    <div class="item-price-wrapper">
+                        <p class="item-price">100 500 руб.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -361,40 +415,40 @@
                 <div class="col-12">
                     <h2 class="text-center">Условия доставки и оплаты</h2>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6 col-12">
                     <h3>Юридическим лицам:</h3>
-                    <div class="pseudo-li">
+                    <div class="pseudo-li d-flex align-items-start">
+                        <img src="img/icon-mark.png" alt="">
                         <p>
-                            <img src="img/icon-mark.png" alt="">
                             <strong>Бесплатная доставка</strong> от 50 кубов
                         </p>
                     </div>
-                    <div class="row col-12">
-                        <div class="col-4 p-0" style="background: lightgray">
+                    <div class="d-flex flex-column flex-sm-row justify-content-between">
+                        <div class="judicial-card w175">
                             <img src="img/icon-car.png" alt="">
                             <p>
                                 <strong>Объем:</strong><br> от 50 до 70 м<sup>3</sup><br> за рейс
                             </p>
                         </div>
-                        <div class="offset-1 col-7 p-0" style="background: lightgray">
+                        <div class=" judicial-card">
                             <img src="img/icon-wallet.png" alt="">
                             <p>
-                                <strong>Формы оплаты:</strong><br> безналичный расчет по выс-<br> тавленному счету, наличными<br> водителю при доставке
+                                <strong>Формы оплаты:</strong><br> безналичный расчет по выс<br>тавленному счету, наличными<br> водителю при доставке
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
+                <div class="col-lg-6 col-12">
                     <h3>Частным лицам:</h3>
-                    <div class="pseudo-li">
+                    <div class="pseudo-li d-flex align-items-start">
+                        <img src="img/icon-mark.png" alt="">
                         <p>
-                            <img src="img/icon-mark.png" alt="">
                             <strong>Бесплатная доставка</strong> от 15 кубов<br> по восточному району Москвы<br> и МО в 10 км от МКАД
                         </p>
                     </div>
-                    <div class="pseudo-li">
+                    <div class="pseudo-li d-flex align-items-start">
+                        <img src="img/icon-mark.png" alt="">
                         <p>
-                            <img src="img/icon-mark.png" alt="">
                             <strong>Оплата</strong> после получения<br> и проверки керамзита
                         </p>
                     </div>
@@ -403,8 +457,119 @@
         </div>
     </section>
     <section class="screen eights-screen">
+        <div class="map-wrapper" id="map">
+            <div class="container">
+                <div class="row position-relative">
+                    <div class="map-info col-12 col-md-8 col-lg-6 position-absolute">
+                        <h2>
+                            Завод в 5 минутах<br>
+                            от м. Новокосино и Лер<br>монтовский проспект
+                        </h2>
+                        <div class="map-contacts">
+                            <div class="d-flex align-items-start mailing">
+                                <img src="img/icon-placemark-with-cursor.png" alt="">
+                                <p>
+                                    111672, г. Москва, Салтыковская<br>
+                                    улица., д. 8, стр. 16
+                                </p>
+                            </div>
+                            <p class="map-tel">8 (800) 003-55-04</p>
+                            <p class="map-mail">info@rkk-keramzit.ru</p>
+                            <div class="buttons-wrapper">
+                                <button data-fancybox data-popup data-src="#popup" data-position="Карта" data-header="БЕСПЛАТНО ПОЛУЧИТЬ ОБРАЗЦЫ КЕРАМЗИТА" class="btn btn-block btn-green">БЕСПЛАТНО ПОЛУЧИТЬ ОБРАЗЦЫ КЕРАМЗИТА</button>
+                                <p>Доставка по Москве и МО в день обращения</p>
+                                <button data-fancybox data-popup data-src="#popup" data-position="Карта" data-header="РАСЧЕТ СТОИМОСТИ И СРОКОВ ПОСТАВКИ" class="btn btn-block btn-white black-border">РАСЧЕТ СТОИМОСТИ И СРОКОВ ПОСТАВКИ</button>
+                                <p>Пришлем расчет в течение 3-х минут</p>
+                            </div>
+                        </div>
+                    </div>
 
+                </div>
+            </div>
+        </div>
     </section>
+    <section class="screen nineth-screen screen-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-center">Остались вопросы? </h2>
+                    <p class="text-center">Задайте их прямо сейчас и получите ответ в течение 3-х минут</p>
+                </div>
+                <form action="./handlers/ask.php" method="post" class="form col-md-8 offset-md-2 col-12">
+                    <div class="form-row">
+                        <div class="col-12 col-md">
+                            <input required="" name="name" type="text" class="form-control" placeholder="Введите ваше имя">
+                        </div>
+                        <div class="col-12 col-md">
+                            <input required="" name="email" type="email" class="form-control" placeholder="Введите Ваш E-mail">
+                        </div>
+                        <div class="form-group col-12">
+                            <textarea required="" class="form-control" placeholder="Введите ваш вопрос" name="ask" rows="6"></textarea>
+                        </div>
+                        <div class="form-group col-12">
+                            <input type="submit" class="btn btn-block btn-green" value="ПОЛУЧИТЬ ОТВЕТ В ТЕЧЕНИЕ 3-Х МИНУТ">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row flex-column flex-md-row d-flex align-items-lg-end align-items-center">
+                <div class="col-lg-3 col-12 logo-wrapper d-flex justify-content-lg-start justify-content-center align-items-center">
+                    <img src="img/logo.png" alt="" class="logo">
+                    <p class="logo-descr">
+                        Рязанская<br> керамзитовая
+                        <br> компания
+                    </p>
+                </div>
+                <div class="col-lg-2 col-12 d-flex align-items-center align-items-lg-start flex-column jur-info">
+                    <p>
+                        ООО «РКК»<br>
+                        ИНН 7702416387<br>
+                        КПП 770201001 <br>
+                        ОГРН 1177746415880
+                    </p>
+                </div>
+                <div class="col-lg-3 col-12 d-flex align-items-center align-items-lg-start flex-column links">
+                    <a href="#">Продажа керамзита</a>
+                    <a href="#">Продажа песка</a>
+                    <a href="#">Продажа щебня</a>
+                    <a href="#">Продажа пескобетона</a>
+                </div>
+                <div class="col-lg-4 col-12 text-right contacts-wrapper">
+                    <p>Бесплатный звонок по России</p>
+                    <a href="tel:+74991166296" class="tel">7 (495) 431-83-31</a>
+                    <p class="work-time">с 10:00 до 19:00</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- POPUP -->
+    <div class="popup" id="popup">
+        <div class="container">
+            <h2 class="text-center"><span class="header-paste"></span></h2>
+            <p class="text-center">заполните поля ниже сейчас</p>
+            <form class="form text-center" action="./handlers/data.php" method="post">
+                <div class="form-row">
+                    <input name="position" value="" type="hidden">
+                    <div class="form-group col-12">
+                        <input required="" type="name" name="name" class="form-control" placeholder="Введите ваше имя" />
+                    </div>
+                    <div class="form-group col-12">
+                        <input required="" type="tel" name="phone" class="form-control" placeholder="Введите номер телефона" />
+                    </div>
+                    <div class="form-group col-12">
+                        <input type="submit" class="btn btn-block btn-green" value="Отправить">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- POPUP -->
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/scripts.min.js"></script>
 </body>
 
