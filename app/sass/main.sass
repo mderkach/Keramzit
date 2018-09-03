@@ -63,7 +63,8 @@ button
     
 .screen-bg
      background-color: #fafafb
-
+.rub
+    font-family: sans-serif
 header, footer
     line-height: 1
     padding: 10px 0
@@ -84,6 +85,7 @@ header, footer
         .place-wrapper
             margin-bottom: 14px
             p
+                font-family: "ApercuPro-Light"
                 margin-bottom: 0
                 font-size: 18px
                 font-weight: 300
@@ -159,7 +161,7 @@ header, footer
             .product-name
                 color: #373737
                 font-family: "ApercuPro-Bold"
-                font-size: 28px
+                font-size: 26px
                 font-weight: 700
                 margin-bottom: 13px
             p
@@ -421,8 +423,7 @@ footer
             font-weight: 300
             line-height: 26px
             &:hover
-                font-family: "ApercuPro-Bold"
-                font-weight: 700
+                text-decoration: underline
 .popup
     display: none
     width: 100%
@@ -436,10 +437,21 @@ footer
         color: #000
     .form
         padding: 0
-        input
+        input[type=submit], input[type=tel], input[type=name]
             height: 72px
             border: 1px solid $shadow-gray
-            
+        input[type=submit]
+            text-transform: uppercase
+            border: none
+        .form-check-label
+            font-family: "ApercuPro-Medium"
+            font-weight: 500
+            font-size: 15px
+            &:hover
+                text-decoration: underline
+                cursor: pointer
+.fancybox-content
+    padding: 12px
 .compensate-for-scrollbar
     margin-right: 17px!important
 @import "media" // Always at the end
