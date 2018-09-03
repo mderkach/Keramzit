@@ -6,6 +6,22 @@ $(function () {
         $hamburger.toggleClass("is-active");
     });
     $('input[name="phone"]').inputmask("+7(999)999-99-99");
+    $('.sticky').scrollToFixed({
+        top: 100,
+        limit: $('.sticky').offset().bottom
+    });
+    $('.sticky-anchor').click(function () {
+        var sectionTo = $(this).attr('href');
+        if (window.matchMedia('(max-width: 480px)').matches) {
+            $('html, body').animate({
+                scrollTop: $(sectionTo).offset().top - 75
+            }, 1500);
+        } else {
+            $('html, body').animate({
+                scrollTop: $(sectionTo).offset().top + 1//srcoll to elemement with 120px offset on top (sticky header height)
+            }, 1500);
+        }
+    });
     $('.slider-wrapper').slick({
         infinite: true,
         lazyLoad: 'ondemand',

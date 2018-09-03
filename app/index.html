@@ -22,7 +22,7 @@
     <!-- Custom HTML -->
     <header>
         <div class="container">
-            <div class="row flex-column flex-md-row d-flex align-items-center">
+            <div class="row d-none d-md-flex align-items-center">
                 <div class="col-md-3 col-12 logo-wrapper d-flex justify-content-md-start justify-content-center align-items-center">
                     <img src="img/logo.png" alt="" class="logo">
                     <p class="logo-descr">
@@ -43,6 +43,25 @@
                     <p>Свяжитесь с нами</p>
                     <a href="tel:+74991166296" class="tel">+7 (495) 431-83-31</a>
                     <p class="work-time">с 10:00 до 19:00</p>
+                </div>
+            </div>
+            <div class="row d-md-none align-items-center mobile-header">
+                <div class="col-2 logo-wrapper">
+                    <img src="img/logo.png" alt="" class="logo">
+                </div>
+                <div class="col-8 your-city">
+                    <div class="place-wrapper d-flex flex-row justify-content-center align-items-center">
+                        <img src="img/icon-double-placemark.png" alt="">
+                        <p>
+                            Ваш город:
+                        </p>
+                        <p><strong>Москва</strong> &#x2C5; </p>
+                    </div>
+                </div>
+                <div class="col-2 phone-wrapper text-center">
+                    <a href="tel:+74991166296">
+                        <i class="fas fa-phone-volume"></i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -77,7 +96,7 @@
             </div>
             <div class="row flex-column flex-lg-row buttons-wrapper text-center">
                 <div class="col-lg-6 col-12">
-                    <button data-fancybox data-popup data-src="#popup" data-position="Главный экран" data-header="БЕСПЛАТНО ПОЛУЧИТЬ ОБРАЗЦЫ КЕРАМЗИТА" data-subhead="Заполните поля ниже сейчас" data-submit="Бесплатно получить образцы керамзита" class="btn btn-block btn-green">БЕСПЛАТНО ПОЛУЧИТЬ ОБРАЗЦЫ КЕРАМЗИТА</button>
+                    <button data-fancybox data-popup data-src="#popup" data-position="Главный экран" data-header="БЕСПЛАТНО ПОЛУЧИТЬ ОБРАЗЦЫ КЕРАМЗИТА" data-subhead="Заполните поля ниже сейчас" data-submit="Бесплатно получить ОБРАЗЦЫ керамзита" class="btn btn-block btn-green">БЕСПЛАТНО ПОЛУЧИТЬ ОБРАЗЦЫ КЕРАМЗИТА</button>
                     <p>Доставка по Москве и МО в день обращения</p>
                 </div>
                 <div class="col-lg-6 col-12">
@@ -87,7 +106,25 @@
             </div>
         </div>
     </section>
-    <section class="screen second-screen">
+    <div class="sticky">
+        <div class="container">
+            <div class="row align-items-center">
+                <nav class="nav col-5 d-none d-lg-flex">
+                    <a class="nav-link sticky-anchor" href="#price">Виды керамзита</a>
+                    <a class="nav-link sticky-anchor" href="#garanties">Гарантии</a>
+                    <a class="nav-link sticky-anchor" href="#contacts">Контакты</a>
+                </nav>
+                <div class="col-3 d-none d-lg-block text-right contacts-wrapper">
+                    <p>Свяжитесь с нами</p>
+                    <a href="tel:+74991166296" class="tel">+7 (495) 431-83-31</a>
+                </div>
+                <div class="col-10 offset-1 col-md-8 offset-md-2 offset-lg-0 col-lg-4 p-0 buttons-wrapper">
+                    <button data-fancybox data-popup data-src="#popup" data-position="Закрепленное меню" data-header="БЕСПЛАТНО ПОЛУЧИТЬ ОБРАЗЦЫ КЕРАМЗИТА" data-subhead="Заполните поля ниже сейчас" data-submit="Бесплатно получить ОБРАЗЦЫ керамзита" class="btn btn-block btn-green">БЕСПЛАТНО ПОЛУЧИТЬ ОБРАЗЦЫ КЕРАМЗИТА</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="screen second-screen" id="price">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -228,7 +265,6 @@
                 </div>
             </div>
         </div>
-
     </section>
     <section class="screen third-screen screen-bg">
         <div class="container">
@@ -260,11 +296,11 @@
             <div class="row">
                 <div class="col-lg-6 col-12 d-flex flex-column justify-content-between">
                     <p>
-                        <strong>Бесплатно получите образцы<br>
+                        <strong>Бесплатно получите ОБРАЗЦЫ<br>
                             керамзита</strong> - самостоятельно<br> убедитесь в качестве
                     </p>
-                    <button data-fancybox data-popup data-src="#popup" data-position="Четвертый экран" data-header="БЕСПЛАТНО ПОЛУЧИТЬ ОБРАЗЦЫ КЕРАМЗИТА" data-subhead="Заполните поля ниже сейчас" data-submit="Бесплатно получить образцы керамзита" class="btn btn-block btn-green">БЕСПЛАТНО ПОЛУЧИТЬ ОБРАЗЦЫ КЕРАМЗИТА</button>
-                    <p class="small-p text-center">Привезем образцы в удобное для вас время</p>
+                    <button data-fancybox data-popup data-src="#popup" data-position="Четвертый экран" data-header="БЕСПЛАТНО ПОЛУЧИТЬ ОБРАЗЦЫ КЕРАМЗИТА" data-subhead="Заполните поля ниже сейчас" data-submit="Бесплатно получить ОБРАЗЦЫ керамзита" class="btn btn-block btn-green">БЕСПЛАТНО ПОЛУЧИТЬ ОБРАЗЦЫ КЕРАМЗИТА</button>
+                    <p class="small-p text-center">Привезем ОБРАЗЦЫ в удобное для вас время</p>
                 </div>
                 <div class="col-lg-6 col-12 d-flex flex-column justify-content-between">
                     <p>
@@ -276,7 +312,7 @@
             </div>
         </div>
     </section>
-    <section class="screen fifth-screen">
+    <section class="screen fifth-screen" id="garanties">
         <div class="container">
             <div class="row">
                 <div class="col-12">
@@ -456,7 +492,7 @@
             </div>
         </div>
     </section>
-    <section class="screen eights-screen">
+    <section class="screen eights-screen" id="contacts">
         <div class="map-wrapper" id="map">
             <div class="container">
                 <div class="row position-relative">
@@ -474,7 +510,7 @@
                             <p class="map-tel">8 (800) 003-55-04</p>
                             <p class="map-mail">info@rkk-keramzit.ru</p>
                             <div class="buttons-wrapper">
-                                <button data-fancybox data-popup data-src="#popup" data-position="Карта" data-header="БЕСПЛАТНО ПОЛУЧИТЬ ОБРАЗЦЫ КЕРАМЗИТА" data-subhead="Заполните поля ниже сейчас" data-submit="Бесплатно получить образцы керамзита" class="btn btn-block btn-green">БЕСПЛАТНО ПОЛУЧИТЬ ОБРАЗЦЫ КЕРАМЗИТА</button>
+                                <button data-fancybox data-popup data-src="#popup" data-position="Карта" data-header="БЕСПЛАТНО ПОЛУЧИТЬ ОБРАЗЦЫ КЕРАМЗИТА" data-subhead="Заполните поля ниже сейчас" data-submit="Бесплатно получить ОБРАЗЦЫ керамзита" class="btn btn-block btn-green">БЕСПЛАТНО ПОЛУЧИТЬ ОБРАЗЦЫ КЕРАМЗИТА</button>
                                 <p>Доставка по Москве и МО в день обращения</p>
                                 <button data-fancybox data-popup data-src="#popup" data-position="Карта" data-header="РАСЧЕТ СТОИМОСТИ И СРОКОВ ПОСТАВКИ" data-subhead="Пришлем расчет в течение 3-х минут" data-submit="Получить расчет стоимости и сроков" class="btn btn-block btn-white black-border">РАСЧЕТ СТОИМОСТИ И СРОКОВ ПОСТАВКИ</button>
                                 <p>Пришлем расчет в течение 3-х минут</p>
@@ -572,6 +608,7 @@
     <!-- POPUP -->
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/scripts.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 </body>
 
 </html>

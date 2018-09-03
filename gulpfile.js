@@ -41,6 +41,7 @@ gulp.task('js', function() {
 		'app/libs/slick/slick.min.js',
 		'app/libs/fancybox/jquery.fancybox.min.js',
 		'app/libs/inputmask/jquery.inputmask.bundle.min.js',
+		'app/libs/scrolltofixed/jquery-scrolltofixed-min.js',
 		'app/js/common.js', // Always at the end
 		])
 	.pipe(concat('scripts.min.js'))
