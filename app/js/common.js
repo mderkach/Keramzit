@@ -12,16 +12,21 @@ $(function () {
     });
     $('.sticky-anchor').click(function () {
         var sectionTo = $(this).attr('href');
-        if (window.matchMedia('(max-width: 480px)').matches) {
+        if ($(this).attr("id") == "anchor-price") {
             $('html, body').animate({
-                scrollTop: $(sectionTo).offset().top - 75
+                scrollTop: $(sectionTo).offset().top
+            }, 1500);
+        } else if ($(this).attr("id") == "anchor-contacts"){
+            $('html, body').animate({
+                scrollTop: $(sectionTo).offset().top - 100
             }, 1500);
         } else {
             $('html, body').animate({
-                scrollTop: $(sectionTo).offset().top + 1 //srcoll to elemement with 120px offset on top (sticky header height)
+                scrollTop: $(sectionTo).offset().top - 30
             }, 1500);
         }
     });
+
     $('.slider-wrapper').slick({
         infinite: true,
         lazyLoad: 'ondemand',
@@ -77,5 +82,5 @@ $(function () {
             myMap.behaviors.disable('scrollZoom');
         };
     }
-    
+
 });
