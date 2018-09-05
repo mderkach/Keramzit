@@ -340,12 +340,20 @@ header, footer
                     font-weight: 500
                     line-height: 30px
                     margin-bottom: 0
-    .slick-next, .slick-prev
-        &:before
-            color: #000
-        &:hover
-            &:before
-                color: $green-bg-hover
+.slick-prev 
+    background: url('../img/sprite.png') -78px -19px no-repeat
+.slick-next 
+    background: url('../img/sprite.png') -17px -72px no-repeat
+.slick-prev:hover 
+    background: url(../img/sprite.png) -19px -19px no-repeat
+.slick-next:hover 
+    background: url(../img/sprite.png) -75px -72px no-repeat
+.slick-next, .slick-prev
+    width: 20px
+    height: 34px
+    &:before
+        content: ''!important
+        
 .seventh-screen
     background: url('../img/bg-3.jpg') no-repeat
     background-size: cover
@@ -515,5 +523,8 @@ footer
     padding: 12px
 .compensate-for-scrollbar
     margin-right: 17px!important
+    
+    
+    
 
 @import "media" // Always at the end

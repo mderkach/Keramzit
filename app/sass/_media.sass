@@ -5,10 +5,17 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
-    
+    .slick-prev
+        left: 0
+    .slick-next
+        right: 0
 
 // ≥992px
 +media-breakpoint-down(md)
+    .slick-prev
+        left: -25px
+    .slick-next
+        right: -25px
     button, h1, h2
         font-size: 45px
     .arrow
@@ -52,6 +59,7 @@
                 margin-left: 0
         .contacts-wrapper
             text-align: center!important
+    
     
 // ≥768px
 +media-breakpoint-down(sm)
