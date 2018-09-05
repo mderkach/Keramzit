@@ -5,11 +5,14 @@
 
 // ≥1200px
 +media-breakpoint-down(lg)
+    
 
 // ≥992px
 +media-breakpoint-down(md)
     button, h1, h2
         font-size: 45px
+    .arrow
+        margin: 0 auto
     header,footer 
         .contacts-wrapper 
             p
@@ -22,9 +25,12 @@
     .fifth-screen 
         .btn
             left: auto
-    .judicial-card
-        width: 48%!important
-        margin: 0 auto
+    .seventh-screen 
+        .judicial-card-wrapper
+            .jc-2
+                right: 0
+            .judicial-card
+                max-width: 48%
     .eights-screen 
         .map-info
             h2
@@ -49,6 +55,8 @@
     
 // ≥768px
 +media-breakpoint-down(sm)
+    .arrow
+        margin-left: 10px
     br
         display: none
     footer,header
@@ -83,6 +91,12 @@
                 margin-bottom: 10px
         .contacts-wrapper
             text-align: center!important
+    .seventh-screen
+        .judicial-card-wrapper
+            position: static
+            height: auto
+            .judicial-card
+                position: relative
     .eights-screen
         height: 100%
         max-height: 555px
@@ -149,13 +163,24 @@
     .sixth-screen
         h2
             margin-bottom: 30px
-    .judicial-card
-        width: 100%!important
-        margin-bottom: 10px
-    .eights-screen 
+    .seventh-screen 
+        .judicial-card-wrapper
+            .judicial-card
+                max-width: 100%
+                height: 100%
+                max-height: 165px
+                margin-bottom: 10px
+                p
+                    margin-top: 5px
+    .eights-screen
+        max-height: none
+        .map-wrapper
+            height: 100%
+            max-height: none
         .map-info
-            padding-left: 15px!important
-            padding-right: 15px!important
+            position: static!important
+            padding-top: 0
+            padding-bottom: 0
             h2
                 font-size: 20px
             .map-contacts 
@@ -202,6 +227,8 @@
             .place-wrapper
                 img
                     width: 20px
+                .arrow
+                    width: 13px
                 p
                     font-size: 12px
         .phone-wrapper
