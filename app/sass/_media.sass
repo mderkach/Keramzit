@@ -27,6 +27,13 @@
     .main-screen 
         p
             font-size: 20px
+        .bullet
+            .bullet-img-wrapper
+                width: 65px
+                height: 40px
+            p
+                text-align: left
+                margin-left: 15px
     .product-name-wrapper
         text-align: center
     .fifth-screen 
@@ -51,7 +58,6 @@
             padding-right: 15px!important
     footer
         .jur-info
-            text-align: center
             margin-bottom: 10px
         .links
             margin-bottom: 10px
@@ -99,6 +105,14 @@
                 margin-bottom: 10px
         .contacts-wrapper
             text-align: center!important
+    .main-screen 
+        p
+            margin-bottom: 30px
+        .bullet
+            margin-bottom: 30px
+            p
+                br
+                    display: block
     .seventh-screen
         .judicial-card-wrapper
             position: static
@@ -114,7 +128,7 @@
             h2
                 font-size: 28px
     .small-p
-        margin-bottom: 10px
+        margin-bottom: 20px!important
     .nineth-screen
         h2
             margin-top: 40px
@@ -205,14 +219,20 @@
     footer
         .links
             a
+                font-size: 13px
                 text-decoration: underline
                 &:hover
                     font-family: "ApercuPro-Medium"
                     font-weight: 500
+    footer 
+        .jur-info 
+            p 
+                font-size: 13px
     .popup 
         .form 
             .form-check-label
                 font-size: 12px
+    
 
 @media (max-width: 360px)
     input[type=submit]
@@ -248,6 +268,10 @@
     .nineth-screen 
         h2
             margin-top: 100px
+    .popup 
+        .form 
+            .form-check-label
+                font-size: 11px
 
     
 /*==========  Mobile First  ==========*/

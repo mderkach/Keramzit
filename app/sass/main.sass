@@ -120,9 +120,12 @@ header, footer
         color: #fff
         font-size: 26px
     .bullet
+        margin-top: 30px
+        margin-bottom: 65px
         p
             font-size: 22px
             line-height: 30px
+            margin-bottom: 0
     .buttons-wrapper
         button
             font-size: 16px
@@ -137,7 +140,7 @@ header, footer
 
 .sticky
     background: #fff
-    box-shadow: 0 3px 6px -1px rgba(0,0,0,.6)
+    box-shadow: 0 3px 6px -1px rgba(0,0,0,0.2)
     font-family: "ApercuPro-Medium"
     nav
         a
@@ -152,7 +155,7 @@ header, footer
         a.tel
             font-size: 24px
             font-weight: 500
-            margin-bottom: 10px
+            margin-bottom: 0
             display: block
             color: #000
     .buttons-wrapper
@@ -163,7 +166,7 @@ header, footer
 .sticky
     .container
         display: none
-        padding: 15px 0
+        padding: 8px 0
 .scroll-to-fixed-fixed
     .container
         display: block!important
@@ -483,6 +486,7 @@ footer
             margin-bottom: 0
     .links
         a
+            display: block
             margin-left: 30px
             color: #000
             text-decoration: none
@@ -498,6 +502,7 @@ footer
     width: 100%
     max-width: 440px
     h2
+        margin-top: 20px
         font-size: 21px
         color: #000
         text-transform: uppercase
@@ -516,9 +521,24 @@ footer
             font-family: "ApercuPro-Medium"
             font-weight: 500
             font-size: 15px
+            margin-left: 5px
             &:hover
                 text-decoration: underline
                 cursor: pointer
+#privacy
+    max-width: 600px!important
+    padding: 0 20px
+    line-height: 1.5
+    .privacy-title
+        margin: 20px 0
+        font-family: "ApercuPro-Medium"
+        font-size: 20px
+        font-weight: 500
+    .privacy-list, .privacy-p
+        font-family: "ApercuPro-Light"
+        font-weight: 300
+        font-size: 18px
+        
 .fancybox-content
     padding: 12px
 .compensate-for-scrollbar
