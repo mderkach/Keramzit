@@ -104,22 +104,22 @@ $(function () {
     });
     if (window.matchMedia('(min-width: 576px)').matches) {
         ymaps.ready(init);
-
         function init() {
             // Создание карты.    
             var myMap = new ymaps.Map("map", {
                 center: [55.72930263518857, 37.87428686245723],
                 zoom: 16
             });
-            var place = new ymaps.Placemark([55.729072568997516, 37.871175499999964]);
+            var place = new ymaps.Placemark([55.7306830037432,37.86919066532892]);
             var route = new ymaps.Polyline([
                 [55.726825, 37.859385],
                 [55.726795, 37.859588],
                 [55.726785, 37.860994],
                 [55.726662, 37.865799],
                 [55.729490, 37.866034],
-                [55.729339, 37.871200],
-                [55.729275, 37.871203]
+                [55.729460048113765,37.867431136215174],
+                [55.73068603081336,37.867527695739696],
+                [55.73065576010114,37.8690780125503]
             ]);
             myMap.geoObjects.add(place);
             myMap.geoObjects.add(route);
