@@ -2,7 +2,7 @@
 header('Content-Type: text/html; charset=UTF-8');
 $error = false;
 $name = '';
-$email = '';
+$phone = '';
 $ask = '';
 
 
@@ -28,9 +28,9 @@ if(!empty($_POST['name'])) {
 } else {
     $error = true;
 }
-if(!empty($_POST['email'])) {
-    $email = htmlspecialchars(trim($_POST['email']), ENT_QUOTES);
-    if(empty($email)){
+if(!empty($_POST['phone'])) {
+    $phone = htmlspecialchars(trim($_POST['phone']), ENT_QUOTES);
+    if(empty($phone)){
         $error = true;
     }
 } else {
@@ -60,7 +60,7 @@ if(!$error) {
     $content = "<html><body><table border='1' style='border-color: #666; border-collapse: collapse;' cellpadding='5'>" .
         "<tr style='background: #eee;'><td><strong>Время заявки:</strong> </td><td>".$timestamp."</td></tr>" .
         "<tr><td><strong>Имя посетителя:</strong> </td><td>".$name."</td></tr>\n\n" .
-        "<tr><td><strong>Телефон посетителя:</strong> </td><td>".$email."</td></tr>\n\n" .
+        "<tr><td><strong>Телефон посетителя:</strong> </td><td>".$phone."</td></tr>\n\n" .
         "<tr><td><strong>IP посетителя:</strong> </td><td>".$ip."</td></tr>\n\n" .
         "<tr><td><strong>Область посетителя:</strong> </td><td>".$place[1]."</td></tr>\n\n" .
         "<tr><td><strong>Город посетителя:</strong> </td><td>".$place[0]."</td></tr>\n\n" .
@@ -90,7 +90,7 @@ if(!$error) {
     $fieldsarray = array("mail");
     $checker = botShallNotPass($fieldsarray);
     if ( $checker != 1 ){
-        mail("derkach94@gmail.com", $subject, $content, $headers);   
+        mail("info@keramzitr.ru", $subject, $content, $headers);   
     }
     else{
         echo "По всей видимости вы бот:) Вы смогли заполнить скрытые поля, созданные для бота.";
@@ -103,8 +103,8 @@ if(!$error) {
     } else {
         echo '<h1>Неизвестная ошибка, обратитесь к администратору!</h1>'.
             "Ask:" . $ask .
-            "email:" . $email . 
-            "phone:" . $phone;
+            "Phone:" . $phone . 
+            "Name:" . $name;
     }
 ?>
 
