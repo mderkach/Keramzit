@@ -5,6 +5,30 @@ $name = '';
 $phone = '';
 $ask = '';
 
+// comagic start
+$url = $_POST['consultant_server_url'].'api/add_offline_message/';
+          $data = array(
+            'site_key' => $_POST['site_key'], //Значение без изменений из служебного поля site_key
+            'visitor_id' => $_POST['visitor_id'], //Значение без изменений из служебного поля visitor_id
+            'hit_id' => $_POST['hit_id'], //Значение без изменений из служебного поля hit_id
+            'session_id' => $_POST['session_id'], //Значение без изменений из служебного поля session_id
+            'name' => $_POST['name'], //Имя клиента
+            'email' => $_POST['email'], //E-mail
+            'phone' => $_POST['phone'], //Номер телефона
+            'text' => $_POST['text'],
+           );//Текст заявки
+    $options = array( 'http' =>
+        array(
+            'header' => "Content-type: application/x-www-form-urlencoded; charset=UTF-8",
+            'method' => "POST",
+            'content' => http_build_query($data)
+        )
+    );
+    print $options['http']['content'];
+    $context = stream_context_create($options);
+    $result = file_get_contents($url, false, $context);
+    $resultArray = json_decode($result, true);
+//comagic end
 
 //Город и область посетителя
 include("./detect.php");
@@ -97,7 +121,7 @@ if(!$error) {
     }
 
     //redirect to thank-you.html page.
-    header('location:../ty.html');
+    header('location: http://keramzitr.ru/ty.html');
 } elseif($error2) {
         echo '<h1>Вы должны принять согласие на обработку персональных данных</h1>';
     } else {

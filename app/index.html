@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-<!--    <base href="keramzitr.tu">-->
+    <!--    <base href="keramzitr.tu">-->
     <title>Керамзит с маркой плотности 250 от производителя</title>
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -85,7 +85,12 @@
 
     </script>
     <!-- End Visual Website Optimizer Asynchronous Code -->
+    <script type="text/javascript">
+        var __cs = __cs || [];
+        __cs.push(["setCsAccount", "PI1gmKyQkPKpmhbpftpVQiAGWegAKgiy"]);
 
+    </script>
+    <script type="text/javascript" async src="https://app.comagic.ru/static/cs.min.js"></script>
 </head>
 
 <body>
@@ -794,6 +799,11 @@
                 </div>
                 <form action="./handlers/ask.php" method="post" class="form col-md-8 offset-md-2 col-12">
                     <div class="form-row">
+                        <input type="hidden" name='site_key' />
+                        <input type="hidden" name='visitor_id' />
+                        <input type="hidden" name='hit_id' />
+                        <input type="hidden" name='session_id' />
+                        <input type="hidden" name='consultant_server_url' />
                         <div class="col-12 col-md">
                             <input required="" name="name" type="text" class="form-control" placeholder="Введите ваше имя">
                         </div>
@@ -852,6 +862,11 @@
                 <div class="form-row">
                     <input name="position" value="" type="hidden">
                     <input name="package" value="" type="hidden">
+                    <input type="hidden" name='site_key' />
+                    <input type="hidden" name='visitor_id' />
+                    <input type="hidden" name='hit_id' />
+                    <input type="hidden" name='session_id' />
+                    <input type="hidden" name='consultant_server_url' />
                     <div class="form-group col-12">
                         <input required="" type="name" name="name" class="form-control" placeholder="Введите ваше имя" />
                     </div>
@@ -859,7 +874,7 @@
                         <input required="" type="tel" name="phone" class="form-control" placeholder="Введите номер телефона" />
                     </div>
                     <div class="form-group col-12">
-                        <input type="submit" class="btn btn-block btn-green" value="Отправить">
+                        <input type="submit" class="btn btn-block btn-green" value="Отправить" onclick="formSubmit()">
                     </div>
                     <div class="form-group col-12">
                         <div class="d-flex align-items-center justify-content-center">
@@ -873,9 +888,9 @@
     </div>
     <div class="popup" id="privacy">
         <div class="privacy-wrapper">
-            <p class="privacy-title">Соглашение на обработку персональных данных на сайте <a href="#" class="privacy-text-a">(тут будет адрес)</a></p>
+            <p class="privacy-title">Соглашение на обработку персональных данных на сайте <a href="keramzitr.ru" class="privacy-text-a">keramzitr.ru</a></p>
             <p class="privacy-p">
-                Присоединяясь к настоящему Соглашению и оставляя свои данные на сайте (тут будет адрес) (далее — Сайт), путём заполнения полей форм Пользователь:
+                Присоединяясь к настоящему Соглашению и оставляя свои данные на сайте keramzitr.ru (далее — Сайт), путём заполнения полей форм Пользователь:
 
                 <ul class="privacy-list">
                     <li>подтверждает, что все указанные им данные принадлежат лично ему;</li>
@@ -901,7 +916,7 @@
                     <li> информации о местоположении Пользователя.</li>
                 </ul>
                 <p class="privacy-p">
-                    Пользователь, предоставляет (тут будет адрес) право осуществлять следующие действия (операции) с персональными данными: сбор и накопление; хранение в течение установленных нормативными документами сроков хранения отчётности, но не менее трёх лет, с момента даты прекращения пользования услуг Пользователем; уточнение (обновление, изменение); использование; уничтожение; обезличивание; передача по требованию суда, в т. ч., третьим лицам, с соблюдением мер, обеспечивающих защиту персональных данных от несанкционированного доступа.<br>
+                    Пользователь, предоставляет keramzitr.ru право осуществлять следующие действия (операции) с персональными данными: сбор и накопление; хранение в течение установленных нормативными документами сроков хранения отчётности, но не менее трёх лет, с момента даты прекращения пользования услуг Пользователем; уточнение (обновление, изменение); использование; уничтожение; обезличивание; передача по требованию суда, в т. ч., третьим лицам, с соблюдением мер, обеспечивающих защиту персональных данных от несанкционированного доступа.<br>
                     Указанное согласие действует бессрочно с момента предоставления данных и может быть отозвано вами путём подачи заявления администрации сайта с указанием данных, определённых ст. 14 Закона «О персональных данных».<br>
                     Отзыв согласия на обработку персональных данных может быть осуществлён путём направления Пользователем соответствующего распоряжения в простой письменной форме на адрес электронной почты (e-mail)(тут будет почта)<br>
                     Сайт имеет право вносить изменения в настоящее Соглашение. При внесении изменений в актуальной редакции указывается дата последнего обновления. Новая редакция Соглашения вступает в силу с момента её размещения, если иное не предусмотрено новой редакцией Соглашения.<br>
@@ -948,13 +963,18 @@
         <div><img src="https://mc.yandex.ru/watch/50379526" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
-    <script type="text/javascript">
-        var __cs = __cs || [];
-        __cs.push(["setCsAccount", "PI1gmKyQkPKpmhbpftpVQiAGWegAKgiy"]);
+    <script>
+        function formSubmit() {
+            var credentials = Comagic.getCredentials();
+            for (var field in credentials) {
+                if (credentials.hasOwnProperty(field)) {
+                    $('[name=' + field + ']').val(credentials[field]);
+                }
+            }
+            $('form').submit();
+        }
 
     </script>
-    <script type="text/javascript" async src="https://app.comagic.ru/static/cs.min.js"></script>
-
 </body>
 
 </html>

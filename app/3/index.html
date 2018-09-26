@@ -85,6 +85,14 @@
 
     </script>
     <!-- End Visual Website Optimizer Asynchronous Code -->
+    <!-- comagic   -->
+    <script type="text/javascript">
+        var __cs = __cs || [];
+        __cs.push(["setCsAccount", "PI1gmKyQkPKpmhbpftpVQiAGWegAKgiy"]);
+
+    </script>
+    <script type="text/javascript" async src="https://app.comagic.ru/static/cs.min.js"></script>
+    <!-- comagic   -->
 </head>
 
 <body>
@@ -948,13 +956,18 @@
         <div><img src="https://mc.yandex.ru/watch/50379526" style="position:absolute; left:-9999px;" alt="" /></div>
     </noscript>
     <!-- /Yandex.Metrika counter -->
-    <script type="text/javascript">
-        var __cs = __cs || [];
-        __cs.push(["setCsAccount", "PI1gmKyQkPKpmhbpftpVQiAGWegAKgiy"]);
+    <script>
+        function formSubmit() {
+            var credentials = Comagic.getCredentials();
+            for (var field in credentials) {
+                if (credentials.hasOwnProperty(field)) {
+                    $('[name=' + field + ']').val(credentials[field]);
+                }
+            }
+            $('form').submit();
+        }
 
     </script>
-    <script type="text/javascript" async src="https://app.comagic.ru/static/cs.min.js"></script>
-
 </body>
 
 </html>
