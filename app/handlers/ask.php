@@ -29,6 +29,7 @@ $url = $_POST['consultant_server_url'].'api/add_offline_message/';
     $result = file_get_contents($url, false, $context);
     $resultArray = json_decode($result, true);
 //comagic end
+
 //Город и область посетителя
 include("./detect.php");
 $place[0] = occurrenceCity();
@@ -120,7 +121,7 @@ if(!$error) {
     }
 
     //redirect to thank-you.html page.
-    header('location:../ty.html');
+    header('location: http://keramzitr.ru/ty.html');
 } elseif($error2) {
         echo '<h1>Вы должны принять согласие на обработку персональных данных</h1>';
     } else {

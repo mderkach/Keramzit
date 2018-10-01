@@ -5,9 +5,7 @@ $name = '';
 $phone = '';
 $position = '';
 $package = '';
-
-
-// comagic start
+ // comagic start
 $url = $_POST['consultant_server_url'].'api/add_offline_message/';
           $data = array(
             'site_key' => $_POST['site_key'], //Значение без изменений из служебного поля site_key
@@ -31,7 +29,6 @@ $url = $_POST['consultant_server_url'].'api/add_offline_message/';
     $result = file_get_contents($url, false, $context);
     $resultArray = json_decode($result, true);
 //comagic end
-
 //Город и область посетителя
 include("./detect.php");
 $place[0] = occurrenceCity();
@@ -45,7 +42,6 @@ $ip   = getIp();
 $timestamp = date("Y-m-d H:i:s");
 
 //taking the data from form
-
 if(!empty($_POST['name'])) {
     $name = htmlspecialchars(trim($_POST['name']), ENT_QUOTES);
     if(empty($name)){
@@ -125,14 +121,16 @@ if(!$error) {
     $checker = botShallNotPass($fieldsarray);
     if ( $checker != 1 ){
         mail("info@keramzitr.ru", $subject, $content, $headers);   
-        //mail("derkach94@gmail.com", $subject, $content, $headers);   
+        //mail("derkach94@gmail.com", $subject, $content, $headers); 
     }
     else{
         echo "По всей видимости вы бот:) Вы смогли заполнить скрытые поля, созданные для бота.";
     }
+    
+   
 
     //redirect to thank-you.html page.
-    header('location: http://keramzitr.ru/ty.html');
+    header('location:../ty.html');
 } elseif($error2) {
         echo '<h1>Вы должны принять согласие на обработку персональных данных</h1>';
     } else {
